@@ -1,13 +1,13 @@
-The Book
-========
+Книга
+=====
 
-The Developer's guide to leveraging the flexibility of Sylius. Here you will find all the concepts used in Sylius.
-The Books helps to understand how Sylius works.
+Руководство разработчика для использования гибкости Sylius. Здесь вы найдете все концепции использованные в Sylius.
+Книга поможет понять как работает Sylius.
 
-Introduction
-------------
+Вступление
+----------
 
-Introduction aims to describe the philosophy of Sylius. It will also teach you about environments before you start installing it.
+Вступление предназначено для описания философии Sylius. Оно так же поможет изучить окружение перед тем как вы установите их.
 
 .. toctree::
     :hidden:
@@ -16,11 +16,11 @@ Introduction aims to describe the philosophy of Sylius. It will also teach you a
 
 .. include:: /book/introduction/map.rst.inc
 
-Installation
-------------
+Установка
+---------
 
-The installation chapter is of course a comprehensive guide to installing Sylius on your machine, but it also provides
-a general instruction on upgrading Sylius in your project.
+Глава о том как установить Sylius на вашей машине, так же содержит общие инструкции по обновлению Sylius в
+вашем проекте.
 
 .. toctree::
     :hidden:
@@ -29,11 +29,11 @@ a general instruction on upgrading Sylius in your project.
 
 .. include:: /book/installation/map.rst.inc
 
-Architecture
-------------
+Архитектура
+-----------
 
-The key to understanding principles of Sylius internal organization. Here you will learn about the Resource layer,
-state machines, events and general non e-commerce concepts adopted in the platform, like E-mails or Fixtures.
+Ключ к пониманию принципов внутренней организаци Sylius. Здесь вы изучите Resource layer, машину состояний, state machines
+и основные e-commerce концепции принятые в платформе, такие как E-mail и Fixtures.
 
 .. toctree::
     :hidden:
@@ -42,11 +42,11 @@ state machines, events and general non e-commerce concepts adopted in the platfo
 
 .. include:: /book/architecture/map.rst.inc
 
-Configuration
+Конфигурация
 -------------
 
-Having knowledge about basics of our architecture we will introduce the three most important concepts - Channels, Locales and Currencies.
-These things have to be configured before you will have a Sylius application up and running.
+Имея базовые знания об архитектуре вы познакомитесь с тремя самыми важными концепциями - Channels, Locales и Currencies.
+Эти вещи должны быть сконфигурированы перед тем как ваше Sylius приложение запустится.
 
 .. toctree::
     :hidden:
@@ -55,11 +55,11 @@ These things have to be configured before you will have a Sylius application up 
 
 .. include:: /book/configuration/map.rst.inc
 
-Customers
----------
+Покупатели
+----------
 
-This chapter will tell you more about the way Sylius handles users, customers and admins.
-There is also a subchapter dedicated to addresses of your customers.
+Эта глава расскажем вам о способе работы с пользователями, заказчиками и админами.
+Здесь так же есть подглава посвященная адресам ваших покупателей.
 
 .. toctree::
     :hidden:
@@ -68,10 +68,10 @@ There is also a subchapter dedicated to addresses of your customers.
 
 .. include:: /book/customers/map.rst.inc
 
-Products
---------
+Товары
+------
 
-This is a guide to understanding products handling in Sylius together with surrounding concepts. Read about
+Это руководство к пониманию работы с товарами в Sylius вместе с сопутствующими концепциями. Прочитайте о
 Associations, Reviews, Attributes, Taxons etc.
 
 .. toctree::
@@ -81,13 +81,12 @@ Associations, Reviews, Attributes, Taxons etc.
 
 .. include:: /book/products/map.rst.inc
 
-Carts & Orders
---------------
+Корзина и Заказы
+----------------
 
-In this chapter you will learn everything you need to know about orders in Sylius.
-This concept comes together with a few additional ones, like promotions, payments, shipments or checkout in general.
-
-You should also have a look here if you are looking for Cart, which is in Sylius an Order in the ``cart`` state.
+Эта глава содержит все что вам необходимо знать о заказах в Sylius.
+Здесь также представлены описания сопутствующих концепций, таких как промо-акции, платежи, доставка.
+Вы также должны посмотреть главу если вы ищете информацию о корзине, о заказ и состоянии корзины.
 
 .. toctree::
     :hidden:
@@ -96,10 +95,10 @@ You should also have a look here if you are looking for Cart, which is in Sylius
 
 .. include:: /book/orders/map.rst.inc
 
-Themes
-------
+Темы
+----
 
-Here you will learn basics about the Theming concept of Sylius. How to change the theme of your shop? keep reading!
+Здесь базовая информация о темах в Sylius. Как поменять тему вашего приложения? Читайте!
 
 .. toctree::
     :hidden:
