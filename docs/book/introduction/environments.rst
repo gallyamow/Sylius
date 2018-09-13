@@ -1,58 +1,69 @@
 .. index::
    single: Environments
 
-Understanding Environments
-==========================
+Понимание окружений
+===================
 
-Every Sylius application is the combination of code and a set of configuration that dictates how that code should function. The configuration may define the database being used, whether or not something should be cached, or how verbose logging should be. In Symfony, the idea of "environments" is the idea that the same codebase can be run using multiple different configurations. For example, the dev environment should use configuration that makes development easy and friendly, while the prod environment should use a set of configuration optimized for speed.
+Каждое Sylius приложение это комбинаци кода и множества настроек, которые определяют как этот код должен работать.
+Конфигурация может определять используется база даных, может ли быть что то быть закешировано или насколько подробно
+должно работать логирование. В Symfony идея использования окружений  это идея использование одной кодовой базы для
+запуска разных конфигураций. Для примера, dev должно делаеть разработку более простой и дружелюбной, а prod-окружение
+должно состоять из настроек которые ориентированы на скорость.
 
 Development
 -----------
 
-Development environment or ``dev``, as the name suggests, should be used for development purposes. It is much slower than production, because it uses much less aggressive caching and does a lot of processing on every request.
-However, it allows you to add new features or fix bugs quickly, without worrying about clearing the cache after every change.
+Development окружение или ``dev``, как подсказывает название должно быть использовано для целей разработки. Оно гораздо
+более медленно чем production, потому что оно использует менее агрессивные техники кеширования и делает много работы
+на каждый запрос. Однако, это позволяет вам быстро добавлять новые функции и исправлять баги, без необходимости
+беспокоится о чистке кеша после каждого изменения.
 
-Sylius console runs in ``dev`` environment by default. You can access the website in dev mode via the ``/app_dev.php`` file in the ``web/`` directory. (under your website root)
+Консоль Sylius запускается с ``dev`` окружением по умолчанию. Вы можете получить доступ к сайту в dev окружении
+обращаясь к файлу ``/app_dev.php`` в ``web/`` директории. (в корне вашего веб сервера)
 
 Production
 ----------
 
-Production environment or ``prod`` is your live website environment. It uses proper caching and is much faster than other environments. It uses live APIs and sends out all e-mails.
+Production окржуение или ``prod`` это окружение в котором работает ваш веб сайт в боевом режиме. Оно использует
+кеширование и намного быстрее чем другие окружения. Оно использует реальное API и отправляет все e-mail.
 
-To run Sylius console in ``prod`` environment, add the following parameters to every command call:
+Чтобы запустить консоль в ``prod`` окружении, добавьте этот параметр к каждой команде:
 
 .. code-block:: bash
 
    $ bin/console --env=prod --no-debug cache:clear
 
-You can access the website in production mode via the ``/app.php`` file in your website root (``web/``) or just ``/`` path. (on Apache)
+Вы можете получить доступ к веб сайту в production режиме обратившись к файлу ``/app.php`` в корне вашего сайта
+ (``web/``) или ``/``. (в Apache)
 
 Staging
 -------
 
-Staging environment or ``staging`` is the last line before the shop will go to the production. Here you should test all new features to ensure that everything works as expected.
-It's almost an exact copy of production environment but with different database and turned off e-mails.
+Staging окружение or ``staging`` используется как последний шаг перед production. Используя его вы можете тестировать
+новые функции и убедится что все работает как предполагается. Оно почти полная копия production окружения, но с другими
+настройками базы данных и с отключенной отправкой e-amil.
 
-To run Sylius console in ``staging`` environment, add the following parameters to every command call:
+Чтобы запустить консоль в ``staging`` окружение, так же добавьте параметр к каждой комманде:
 
 .. code-block:: bash
 
    $ bin/console --env=staging --no-debug cache:clear
 
-You can access the website in staging mode via the ``/app_staging.php`` file in your website root (``web/``) or just ``/`` path. (on Apache)
+Для доступа к сайту в ``staging`` окружении нужно обращаться к файлу ``/app_staging.php``.
 
 Test
 ----
 
-Test environment or ``test`` is used for automated testing. Most of the time you will not access it directly.
+Test окружение или ``test`` используется для автоматизированного тестирования. В большинстве случаев вы не будете
+использовать его напрямую.
 
-To run Sylius console in ``test`` environment, add the following parameters to every command call:
+Чтобы запустить консоль в ``test`` окружении, необходимо добавить параметр к каждой команде:
 
 .. code-block:: bash
 
    $ bin/console --env=test cache:clear
 
-Final Thoughts
---------------
+Финальные мысли
+---------------
 
-You can read more about Symfony environments in `this cookbook article <http://symfony.com/doc/current/cookbook/configuration/environments.html>`_.
+Вы можете узнать больше о Symfony окружениях в `статье <http://symfony.com/doc/current/cookbook/configuration/environments.html>`_.

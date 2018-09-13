@@ -1,52 +1,56 @@
 .. index::
    single: Introduction
 
-Introduction to Sylius
-======================
+Введение в Sylius
+=================
 
-Sylius is a game-changing e-commerce solution for PHP, based on the Symfony framework.
+Sylius это решение для электронной коммерции на PHP, основанное на Symfony framework.
 
-Philosophy
-----------
+Философия
+---------
 
-Sylius is completely open source (MIT license) and free, maintained by a diverse and creative community of developers and companies.
+Sylius это open source (MIT license) и полностью бесплатное решение, поддерживаемое сообществом разработчиков и компаний.
 
-What are our core values and what makes us different from other solutions?
+Что отличает Sylius от других решений?
 
-* Components based approach
-* Unlimited flexibility and simple customization
-* Developer-friendly, using latest technologies
-* Developed using best practices and BDD approach
-* `Highest quality of code <https://scrutinizer-ci.com/g/Sylius/Sylius/>`_
+* Компонентный подход
+* Неограниченная гибкость и простота кастомизации
+* Дружественный к разработчику и использующий последние технологии код
+* Разработано с использованием лучших практик и BDD подхода
+* `Высочайшее качество кода <https://scrutinizer-ci.com/g/Sylius/Sylius/>`_
 
-And much more, but we will let you discover it yourself.
+И многое другое, найдете это сами.
 
-The Three Natures of Sylius
----------------------------
+Три сущности Sylius
+-------------------
 
-Sylius is constructed from fully decoupled and flexible e-commerce components for PHP. It is also a set of Symfony bundles, which integrate the components into the full-stack framework.
-On top of that, Sylius is also a complete e-commerce platform crafted from all these building blocks.
+Sylius сконструирован из полностью разделенных и гибких e-commerce компонент на PHP. Он так же содержит набор Symfony
+бандлов, которые интегрированы в full-stack фреймворк. Sylius это законченная e-commerce платформа созданная из этих
+блоков.
 
-It is your choice how to use Sylius, you can benefit from the components with any framework, integrate selected bundles into existing or new Symfony app or built your application on top of Sylius platform.
+Это ваш выбор как использовать Sylius, вы можете получить выгоду от любого фреймворка, ингерируюя выбранные бандлы
+во внутрь существующих или новых приложений Symfony либо написав свое приложение на платформе Sylius.
 
-Sylius Platform
----------------
+Платформа Sylius
+----------------
 
-This book is about our **full-stack e-commerce platform**, which is a standard Symfony application providing the most common webshop and a foundation for custom systems.
+Эта книга об нашей **full-stack e-commerce platform**, который представляет собой стандартное приложене Symfony,
+предоставляюще самые главные функции интернет-магазина.
 
-Leveraging Symfony Bundles
---------------------------
-
-If you prefer to build your very custom system step by step and from scratch, you can integrate the standalone Symfony bundles. For the installation instructions, please refer to the appropriate bundle documentation.
-
-E-Commerce Components for PHP
+Использование Symfony Bundles
 -----------------------------
 
-If you use a different framework than Symfony, you are welcome to use Sylius components, which will make it much easier to implement a webshop with any PHP application and project.
-They provide you with default models, services and logic for all aspects of e-commerce, completely separated and ready to use.
+Если вы предпочитаете создавать свою собственную системы шаг за шагом с нуля, вы можете интегрировать standalone Symfony
+бандлы. Как установить эти бандлы вы найдете в их документации.
 
-Final Thoughts
---------------
+E-Commerce компоненты на PHP
+----------------------------
 
-Depending on how you want to use Sylius, continue reading The Book, which
-covers the usage of the full stack solution, browse the Bundles Reference or learn about The Components.
+Если вы предпочитаете другой фреймворк вместо Symfony, вы можете использовать только компоненты Sylius, которые позволят
+вам проще реализовать интернет-магазин с любым PHP приложением или проектом.
+
+Финальные мысли
+---------------
+
+В зависимости от того как вы хотите использовать Sylius, продолжите чтение книги, которое покрывает использование
+full stack решения, или просматривайте документацию бандлов чтобы почитать про компоненты.

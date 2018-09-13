@@ -1,7 +1,7 @@
-Introduction
-============
+Вступление
+==========
 
-This is the beginning of the journey with Sylius. We will start with a basic insight into terms that we use in Sylius Documentation.
+Это начала путешествия в Sylius. Мы начнем c изучения терминов которые мы используем в документации Sylius.
 
 .. toctree::
     :hidden:
